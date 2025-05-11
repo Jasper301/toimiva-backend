@@ -38,6 +38,7 @@ app.use('/api/entries', entryRouter);
 app.use('/api/users', userRouter);
 
 // Start the server
-app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+app.listen(3000, '0.0.0.0', () => {
+  console.log('Server running at http://0.0.0.0:3000/');
 });
+
